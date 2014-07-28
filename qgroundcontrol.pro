@@ -120,7 +120,7 @@ DEFINES += _TTY_NOWARN_
 # Logging Library
 #
 include (QsLog/QsLog.pri)
-
+include (libs/mavlink/include/mavlink/v1.0-qt/mavlink.pri)
 #
 # OS Specific settings
 #
@@ -639,7 +639,8 @@ HEADERS += \
     src/ui/DroneshareUploadDialog.h \
     src/ui/DroneshareUpload.h \
     src/ui/LoginDialog.h \
-    src/ui/DroneshareAPIBroker.h
+    src/ui/DroneshareAPIBroker.h \
+    src/comm/UASObject.h
 #    libs/sik_uploader/qsikuploader.h \
 #    libs/sik_uploader/sikuploader.h \
 
@@ -860,7 +861,8 @@ SOURCES += src/main.cc \
     src/ui/DroneshareUploadDialog.cpp \
     src/ui/DroneshareUpload.cpp \
     src/ui/LoginDialog.cpp \
-    src/ui/DroneshareAPIBroker.cpp
+    src/ui/DroneshareAPIBroker.cpp \
+    src/comm/UASObject.cc
 #    libs/sik_uploader/qsikuploader.cpp \
 #    libs/sik_uploader/sikuploader.cpp \
 
