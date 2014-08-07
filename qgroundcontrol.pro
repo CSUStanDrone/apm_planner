@@ -101,10 +101,12 @@ QT += network \
     opengl \
     svg \
     xml \
-    phonon \
     webkit \
     sql \
-    declarative
+    declarative \
+    widgets \
+    serialport \
+    webkitwidgets
 
 ##  testlib is needed even in release flavor for QSignalSpy support
 QT += testlib
@@ -303,10 +305,8 @@ FORMS += \
     src/ui/watchdog/WatchdogView.ui \
     src/ui/QGCFirmwareUpdate.ui \
     src/ui/QGCPxImuFirmwareUpdate.ui \
-    src/ui/QGCDataPlot2D.ui \
     src/ui/QGCRemoteControlView.ui \
     src/ui/QMap3D.ui \
-    src/ui/QGCWebView.ui \
     src/ui/SlugsDataSensorView.ui \
     src/ui/SlugsHilSim.ui \
     src/ui/SlugsPadCameraControl.ui \
@@ -473,7 +473,6 @@ HEADERS += \
     src/QGC.h \
     src/ui/QGCFirmwareUpdate.h \
     src/ui/QGCPxImuFirmwareUpdate.h \
-    src/ui/QGCDataPlot2D.h \
     src/ui/linechart/IncrementalPlot.h \
     src/ui/QGCRemoteControlView.h \
     src/ui/RadioCalibration/RadioCalibrationData.h \
@@ -483,7 +482,6 @@ HEADERS += \
     src/ui/RadioCalibration/CurveCalibrator.h \
     src/ui/RadioCalibration/AbstractCalibrator.h \
     src/comm/QGCMAVLink.h \
-    src/ui/QGCWebView.h \
     src/ui/map3D/QGCWebPage.h \
     src/ui/SlugsDataSensorView.h \
     src/ui/SlugsHilSim.h \
@@ -701,7 +699,6 @@ SOURCES += src/main.cc \
     src/QGC.cc \
     src/ui/QGCFirmwareUpdate.cc \
     src/ui/QGCPxImuFirmwareUpdate.cc \
-    src/ui/QGCDataPlot2D.cc \
     src/ui/linechart/IncrementalPlot.cc \
     src/ui/QGCRemoteControlView.cc \
     src/ui/RadioCalibration/RadioCalibrationWindow.cc \
@@ -710,7 +707,6 @@ SOURCES += src/main.cc \
     src/ui/RadioCalibration/CurveCalibrator.cc \
     src/ui/RadioCalibration/AbstractCalibrator.cc \
     src/ui/RadioCalibration/RadioCalibrationData.cc \
-    src/ui/QGCWebView.cc \
     src/ui/map3D/QGCWebPage.cc \
     src/ui/SlugsDataSensorView.cc \
     src/ui/SlugsHilSim.cc \
